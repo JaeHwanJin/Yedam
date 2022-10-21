@@ -44,6 +44,7 @@ public class GolfApp {
 				if (app.Login(menu) == 2) {
 					System.out.println("로그인 성공");
 					System.out.println(" ");
+					
 					while (true) {
 						System.out.println("1.스크린 예약 2.예약내역 조회 3.예약 변경 4.예약 취소  9.로그아웃");
 						int Thrmenu = Integer.parseInt(scn.nextLine());
