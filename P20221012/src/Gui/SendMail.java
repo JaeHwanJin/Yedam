@@ -51,7 +51,7 @@ public class SendMail {
 			message.setFrom(new InternetAddress(fromMail, MimeUtility.encodeText(fromName, "UTF-8", "B"))); // 한글의 경우
 																											// encoding
 																											// 필요
-			message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(toMail));
+//			message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(toMail));
 			message.setSubject(subject);
 			message.setContent(content, "text/html;charset=UTF-8"); // 내용 설정 (HTML 형식)
 			message.setSentDate(new java.util.Date());
