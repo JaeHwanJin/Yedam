@@ -2,7 +2,6 @@ package Dao;
 
 import java.util.List;
 
-
 public class Empmain {
 	public static void main(String[] args) {
 		EmpDAO dao = new EmpDAO();
