@@ -21,6 +21,7 @@ public class AdDMemberServ extends HttpServlet {
         super();
     }
 
+    // get방식의 요청.
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException {
 		
@@ -49,9 +50,14 @@ public class AdDMemberServ extends HttpServlet {
 		out.print("<h3>completed</h3>");
 	}
 
-
+	// post 방식의 요청 시 실행
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doGet(request, response);
+		response.setContentType("text/html;charset=UTF-8");
+		doGet(request, response);
+		PrintWriter out = response.getWriter(); // 사용자의 브라우저(출력스트림 생성)
+		out.print("<h3>Post 방식의 요청</h3>");
 	}
+	
 
 }
